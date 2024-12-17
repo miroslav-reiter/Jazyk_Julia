@@ -198,6 +198,131 @@ Tu je prehľad základných príkazov pre **Julia** v príkazovom riadku (termin
 
 ---
 
+# 📊 Dátové typy a typy premenných v Julia
+
+V Julii existuje množstvo dátových typov, ktoré je možné používať na rôzne účely. Nižšie je prehľad najdôležitejších typov spolu s príkladmi použitia.
+
+## 1. 🔢 Číselné Typy
+
+- **Int**: Celé čísla (napr. `Int64`, `Int32`)
+- **Float**: Reálne čísla s desatinnou čiarkou (napr. `Float64`, `Float32`)
+- **Complex**: Komplexné čísla
+- **Rational**: Racionálne čísla (zlomky)
+
+**Príklady:**
+```julia
+a::Int64 = 10
+b::Float64 = 3.14
+c::Complex{Float64} = 2 + 3im
+d::Rational{Int64} = 3//4
+```
+
+## 2. ✅ Logické Typy
+
+- **Bool**: Reprezentuje hodnoty `true` alebo `false`.
+
+**Príklad:**
+```julia
+is_valid::Bool = true
+```
+
+## 3. 📝 Reťazce a Znaky
+
+- **String**: Reťazce znakov, napríklad text.
+- **Char**: Jeden znak.
+
+**Príklady:**
+```julia
+meno::String = "Julia"
+pismeno::Char = 'J'
+```
+
+## 4. 📦 Polia a Tuples
+
+- **Array**: N-rozmerné pole prvkov typu `T`.
+- **Tuple**: Nezmeniteľný zoznam prvkov rôznych typov.
+
+**Príklady:**
+```julia
+pole::Array{Int64, 1} = [1, 2, 3, 4]
+tuple::Tuple{Int, String} = (1, "Julia")
+```
+
+## 5. 🔑 Dátové Štruktúry
+
+- **Dict**: Asociatívne pole (kľúč-hodnota).
+- **Set**: Množina unikátnych hodnôt.
+
+**Príklady:**
+```julia
+dictionary::Dict{String, Int} = Dict("A" => 1, "B" => 2)
+mnozina::Set{Int} = Set([1, 2, 3])
+```
+
+## 6. 🔄 Union Typy
+
+- **Union**: Premenná môže nadobúdať viacero typov.
+
+**Príklad:**
+```julia
+data::Union{Int, String} = 42
+```
+
+## 7. 🗓️ Typy pre Dátum a Čas
+
+- **Date**: Typ pre dátum.
+- **DateTime**: Typ pre kombináciu dátumu a času.
+
+**Príklady:**
+```julia
+using Dates
+datum::Date = Date(2024, 1, 1)
+cas::DateTime = DateTime(2024, 1, 1, 12, 0)
+```
+
+## 8. 🛠️ Používateľsky Definované Typy (UDT)
+
+- **Struct**: Definovanie nových dátových typov.
+
+**Príklad:**
+```julia
+struct Student
+    meno::String
+    vek::Int
+end
+
+student = Student("Jana", 20)
+println(student.meno)  # Výstup: Jana
+```
+
+## 9. ⚙️ Abstraktné Typy a Dedičnosť
+
+- **Abstract type**: Slúži na vytvorenie hierarchií typov.
+
+**Príklad:**
+```julia
+abstract type Zviera end
+
+struct Pes <: Zviera
+    meno::String
+end
+
+struct Macka <: Zviera
+    meno::String
+end
+
+pes = Pes("Bady")
+macka = Macka("Micka")
+```
+
+---
+
+Julia **nie je objektovo orientovaný jazyk v tradičnom zmysle**, ako napríklad Python, Java alebo C++. **Nemá tradičné triedy (class) a objekty**, a **nepodporuje hierarchickú dedičnosť** tak, ako ju poznáme z **OOP jazykov**. Julia však podporuje koncepty, ktoré umožňujú podobnú funkcionalitu, hlavne prostredníctvom štruktúr (structs), viacnásobnej dispečing a abstraktných typov.
+
+Namiesto tried (Class) sa používajú štruktúry (Struct). V Julii sa namiesto tried používajú structs. struct je dátový typ, ktorý definuje štruktúru dát, podobne ako trieda, ale bez metód priamo pridružených k dátam. struct môže byť immutable (nezmeniteľná), alebo mutable (zmeniteľná).
+
+**🎯 Zhrnutie:** Julia podporuje širokú škálu dátových typov a je flexibilná pri definovaní vlastných štruktúr. Vďaka dynamickým aj pevným typom môžete optimalizovať výkon a flexibilitu vášho kódu.
+
 
 # 🚀 Praktické príklady v jazyku Julia
 
