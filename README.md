@@ -18,6 +18,16 @@ Julia bola vytvorená tímom 4 zakladateľov:
 1.  Viral B. Shah – expert na distribúciu a implementáciu výpočtových systémov.
 Prvá verzia jazyka bola verejne predstavená vo februári 2012. Odvtedy si Julia získala širokú komunitu a stala sa populárnou najmä v oblasti numerických výpočtov, dátovej vedy a strojového učenia.
 
+## Hlavné vlastnosti a výhody Julia
+1. Rýchlosť: Julia je takmer rovnako rýchla ako jazyky C alebo Fortran vďaka využitiu JIT (Just-In-Time) kompilácie cez LLVM (Low-Level Virtual Machine).
+1. Jednoduchá syntax: Syntax je prehľadná a pripomína jazyky ako Python alebo MATLAB, čo ju robí prístupnou aj pre začiatočníkov.
+1. Dynamické typovanie: Podporuje dynamické typovanie, čo znamená, že nemusíte explicitne deklarovať dátové typy, ale môžete ich použiť, ak je to potrebné pre optimalizáciu.
+1. Podpora paralelizácie a distribuovaných výpočtov: Julia je navrhnutá s dôrazom na paralelné spracovanie a dokáže efektívne využívať viacjadrové procesory alebo distribuované systémy.
+1. Bohatá knižnica balíčkov: Má rozsiahly ekosystém balíčkov na rôzne účely, od strojového učenia (napr. Flux.jl) cez numerickú matematiku až po vizualizáciu dát.
+1. Interoperabilita: Dokáže komunikovať s inými jazykmi, ako sú Python, R, C, Fortran či Java. To umožňuje využívať už existujúce knižnice a integráciu so staršími systémami.
+1. Podpora pre metaprogramovanie: Umožňuje prácu s makrami a generovanie kódu počas behu programu, čo poskytuje vysokú flexibilitu pri tvorbe aplikácií.
+1. Otvorený zdrojový kód: Julia je open-source a aktívne vyvíjaná komunitou, čo znamená, že je voľne dostupná na použitie a rozširovanie.
+
 ## Zoznam základných Bash príkazov s vysvetleniami
 Tu je zoznam základných Bash príkazov s konkrétnymi vysvetleniami:
 
