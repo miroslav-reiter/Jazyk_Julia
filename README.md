@@ -132,6 +132,9 @@ end
 pole = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 println("Maximálny prvok: ", maximum(pole))
 println("Medián: ", median(pole))
+println("Počet prvkov: ", length(pole))
+println("Sumár poľa: ", sum(pole))
+println("Priemer: ", mean(pole))
 
 filtrované_pole = filter(x -> x % 2 == 0, pole)
 transformované_pole = map(x -> x^2, pole)
@@ -139,12 +142,15 @@ println("Párne čísla: ", filtrované_pole)
 println("Transformované pole (x^2): ", transformované_pole)
 ```
 
-## 3️⃣ 📊 Pokročilé plotovanie
+## 3️⃣ 📊 Grafy
 ```julia
 using Plots
 x = 1:0.1:10
+y = x .^ 2
 y1 = x .^ 2
 y2 = sin.(x)
+
+plot(x, y, title="Graf y = x^2", xlabel="x", ylabel="y")
 
 p1 = plot(x, y1, label="y = x^2", xlabel="x", ylabel="y", title="Parabolický graf")
 p2 = plot(x, y2, label="y = sin(x)", xlabel="x", ylabel="y", title="Sinusový graf")
@@ -152,6 +158,21 @@ plot(p1, p2, layout=(2, 1))
 ```
 
 ## 4️⃣ 🔄 Podmienky a cykly
+```julia
+# Použitie if-else a for cyklu
+x = 7
+if x > 5
+    println("x je väčšie ako 5")
+else
+    println("x je menšie alebo rovné 5")
+end
+
+println("Výsledky cyklu:")
+for i in 1:5
+    println("Číslo: ", i)
+end
+```
+
 ```julia
 function rozhodnutie(a, b)
     if a > b
@@ -169,6 +190,16 @@ end
 ```
 
 ## 5️⃣ 🧩 Funkcie s predvolenými hodnotami
+
+```julia
+# Definovanie a volanie funkcie
+function pozdrav(meno)
+    return "Ahoj, " * meno
+end
+```
+
+println(pozdrav("Júlia"))
+
 ```julia
 function pozdrav(meno, pozdrav_kompletne=true)
     if pozdrav_kompletne
@@ -181,9 +212,13 @@ end
 println(pozdrav("Júlia", false))
 ```
 
-## 6️⃣ 📏 Pokročilé matematické operácie
+## 6️⃣ 📏 Matematické operácie
 ```julia
 using Optim
+
+println("Súčet 2 a 3: ", 2 + 3)
+println("Koreň zo 16: ", sqrt(16))
+println("Faktoriál 5: ", factorial(5))
 
 f(x) = (x - 3)^2 + 1
 result = optimize(f, 0.0, 5.0)
@@ -191,6 +226,14 @@ println("Minimum funkcie je v bode: ", result.minimizer)
 ```
 
 ## 7️⃣ 🔢 Operácie s maticami
+```julia
+# Vytvorenie matice a jej operácie
+matica = [1 2; 3 4]
+matica_transponovana = transpose(matica)
+println("Pôvodná matica:\n", matica)
+println("Transponovaná matica:\n", matica_transponovana)
+```
+
 ```julia
 using LinearAlgebra
 
@@ -200,6 +243,22 @@ println("Inverzná matica:
 ```
 
 ## 8️⃣ ⚡ Paralelný výpočet
+```julia
+# Paralelný výpočet súčtu prvkov v poli
+using SharedVector
+
+function paralelny_sumar(pole)
+    sum = 0
+    @distributed for i in 1:length(pole)
+        sum += pole[i]
+    end
+    return sum
+end
+
+pole = [1, 2, 3, 4, 5]
+println("Paralelný súčet: ", paralelny_sumar(pole))
+```
+
 ```julia
 using SharedArrays
 
