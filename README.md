@@ -131,10 +131,13 @@ end
 # Operácie s poľami - štatistika a transformácia
 pole = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 println("Maximálny prvok: ", maximum(pole))
-println("Medián: ", median(pole))
+println("Minimálny prvok: ", minimum(pole))
 println("Počet prvkov: ", length(pole))
-println("Sumár poľa: ", sum(pole))
+println("Suma poľa: ", sum(pole))
 println("Priemer: ", mean(pole))
+println("Medián: ", median(pole))
+println("Rozptyl: ", var(pole))
+println("Štandardná odchýlka: ", std(pole))
 
 filtrované_pole = filter(x -> x % 2 == 0, pole)
 transformované_pole = map(x -> x^2, pole)
@@ -219,13 +222,18 @@ using Optim
 println("Súčet 2 a 3: ", 2 + 3)
 println("Koreň zo 16: ", sqrt(16))
 println("Faktoriál 5: ", factorial(5))
+println("Sinus 45° (v radiánoch): ", sin(pi / 4))
+println("Exp(-1): ", exp(-1))
+println("Logaritmus (základ e) z 10: ", log(10))
 
+# Optimalizácia - minimizácia funkcie
+# Definovanie funkcie na optimalizáciu
 f(x) = (x - 3)^2 + 1
 result = optimize(f, 0.0, 5.0)
 println("Minimum funkcie je v bode: ", result.minimizer)
 ```
 
-## 7️⃣ 🔢 Operácie s maticami
+## 7️⃣ 🔢 Operácie s maticami (Matrix operations)
 ```julia
 # Vytvorenie matice a jej operácie
 matica = [1 2; 3 4]
@@ -238,8 +246,20 @@ println("Transponovaná matica:\n", matica_transponovana)
 using LinearAlgebra
 
 matica = [1 2 3; 4 5 6; 7 8 9]
-println("Inverzná matica:
-", inv(matica))
+println("Inverzná matica:", inv(matica))
+```
+
+```julia
+# Vytvorenie a manipulácia s maticami
+matica = [1 2 3; 4 5 6; 7 8 9]
+vektor = [1, 2, 3]
+
+# Matematické operácie
+suma = matica + matica  # Sčítanie matíc
+produkt = matica * matica'  # Násobenie matice s jej transponovanou verziou
+
+println("Súčet matíc: \n", suma)
+println("Skalárny produkt matíc: \n", produkt)
 ```
 
 ## 8️⃣ ⚡ Paralelný výpočet
