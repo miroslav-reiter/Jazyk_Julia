@@ -1,6 +1,22 @@
-# 👩 Online kurz Julia
-Materiály k online kurzu Julia
+# 👩 Online kurzy Julia
+Materiály k online kurzom Julia
 
+## Čo je to Julia?
+Julia je moderný, vysokovýkonný programovací jazyk, ktorý bol navrhnutý najmä pre vedecké výpočty, analýzu údajov a numerické simulácie. Kombinuje výhody rýchlosti kompilovaných jazykov, ako sú C alebo Fortran, s jednoduchosťou dynamických jazykov, ako je Python. Julia podporuje prácu s maticami a vektorovými výpočtami, čo z nej robí populárny jazyk vo výskume, strojovom učení a finančných analýzach.
+
+## Prečo sa Julia volá Julia?
+Názov programovacieho jazyka Julia nevychádza zo špecifického technického významu, ale z jednoduchej voľby jeho autorov. Podľa zakladateľov jazyka, chceli pomenovanie, ktoré je krátke, pútavé, ľahko zapamätateľné a má pozitívny nádych. Názov "Julia" bol vybraný bez hlbokého príbehu za ním – zakladateľ Alan Edelman raz spomenul, že sa mu páčilo pomenovať jazyk Julia, a toto meno zostalo. Navyše, názov nie je skratkou ani akronymom, ale bol vybraný ako ľudský, priateľský názov, ktorý môže evokovať prístupnosť.
+
+##  Ako vznikol jazyk Julia?
+Jazyk Julia vznikol s cieľom spojiť výhody rýchlosti nízkoúrovňových jazykov ako C a Fortran s jednoduchosťou, interaktivitou a flexibilitou jazykov ako Python, R alebo MATLAB. Autori sa snažili vytvoriť jazyk, ktorý umožní vedeckým pracovníkom, inžinierom a vývojárom používať jeden jazyk pre všetko: rýchle prototypovanie, vysokovýkonné výpočty aj distribúciu produkčných aplikácií.
+
+## Kto je autor jazyka Julia?
+Julia bola vytvorená tímom 4 zakladateľov:
+1. Alan Edelman – známy matematik a profesor na MIT, odborník na numerické výpočty.
+1. Jeff Bezanson – softvérový inžinier a dizajnér programovacích jazykov.
+1. Stefan Karpinski – odborník na dátové analýzy a vývoj softvéru.
+1.  Viral B. Shah – expert na distribúciu a implementáciu výpočtových systémov.
+Prvá verzia jazyka bola verejne predstavená vo februári 2012. Odvtedy si Julia získala širokú komunitu a stala sa populárnou najmä v oblasti numerických výpočtov, dátovej vedy a strojového učenia.
 
 ## Zoznam základných Bash príkazov s vysvetleniami
 Tu je zoznam základných Bash príkazov s konkrétnymi vysvetleniami:
