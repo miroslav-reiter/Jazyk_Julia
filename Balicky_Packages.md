@@ -71,15 +71,8 @@ Tento súbor obsahuje prehľad základných Julia balíčkov a príkazov na ich 
 
 ---
 
-## 🔍 Vyhľadávanie a zdroje
-- **Vyhľadávanie balíkov v REPL:**
-  ```julia
-  pkg> search Plots
-  ```
-
 - **Webové repozitáre:**
   - [Oficiálny Julia balíčkový register](https://juliahub.com)
   - [Hľadanie balíkov](https://pkg.julialang.org)
 
 ---
-
