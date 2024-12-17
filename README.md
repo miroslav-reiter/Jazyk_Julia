@@ -33,7 +33,7 @@ Prvá verzia jazyka bola verejne predstavená vo februári 2012. Odvtedy si Juli
 
 ---
 
-## ✅ **1. Inštalácia Julii**
+## ✅ **1. Inštalácia Julia**
 
 1. **Stiahnite a nainštalujte Juliu** 💾:
    - Prejdite na [oficiálnu stránku Julii](https://julialang.org/downloads/).
