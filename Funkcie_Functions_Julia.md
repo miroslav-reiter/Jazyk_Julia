@@ -165,4 +165,121 @@ Tento prehľad poskytuje zoznam najdôležitejších zabudovaných funkcií v ja
 
 ---
 
+## 📊 17. **isnan()**  
+**Popis:** Overí, či je hodnota NaN (Not a Number).  
+**Použitie:**
+```julia
+println(isnan(0/0))  # true
+println(isnan(5))    # false
+```
+
+## 🔍 18. **isfinite()**  
+**Popis:** Kontroluje, či je číslo konečné (nie ∞ alebo NaN).  
+**Použitie:**
+```julia
+println(isfinite(10))      # true
+println(isfinite(1/0))     # false
+```
+
+## 🧩 19. **isnothing()**  
+**Popis:** Overí, či je hodnota `nothing`.  
+**Použitie:**
+```julia
+x = nothing
+println(isnothing(x))  # true
+```
+
+## 🫤 20. **floor()**  
+**Popis:** Zaokrúhli číslo smerom nadol.  
+**Použitie:**
+```julia
+println(floor(3.7))  # 3.0
+```
+
+## 📈 21. **ceil()**  
+**Popis:** Zaokrúhli číslo smerom nahor.  
+**Použitie:**
+```julia
+println(ceil(3.2))  # 4.0
+```
+
+## 🔗 22. **zip()**  
+**Popis:** Kombinuje dva alebo viac iterátorov do párov.  
+**Použitie:**
+```julia
+a = [1, 2, 3]
+b = ["a", "b", "c"]
+println(collect(zip(a, b)))  # [(1, "a"), (2, "b"), (3, "c")]
+```
+
+## 🎲 23. **mod()**  
+**Popis:** Vypočíta zvyšok po delení.  
+**Použitie:**
+```julia
+println(mod(10, 3))  # 1
+```
+
+## ⚡ 24. **exp()**  
+**Popis:** Vypočíta exponenciálnu funkciu e^x.  
+**Použitie:**
+```julia
+println(exp(1))  # 2.718281828459045
+```
+
+## 📉 25. **log()**  
+**Popis:** Logaritmická funkcia pre základ e.  
+**Použitie:**
+```julia
+println(log(2.718))  # ~1.0
+```
+
+## 🔄 26. **reverse()**  
+**Popis:** Otočí poradie prvkov v kolekcii.  
+**Použitie:**
+```julia
+pole = [1, 2, 3, 4]
+println(reverse(pole))  # [4, 3, 2, 1]
+```
+
+## 💡 27. **deepcopy()**  
+**Popis:** Vytvorí hlbokú kópiu objektu (aj s vnorenými hodnotami).  
+**Použitie:**
+```julia
+pole = [1, [2, 3]]
+kopia = deepcopy(pole)
+println(kopia)  # [1, [2, 3]]
+```
+
+## 💢 28. **parse()**  
+**Popis:** Prevedie reťazec na číselný typ.  
+**Použitie:**
+```julia
+println(parse(Int, "42"))     # 42
+println(parse(Float64, "3.5"))  # 3.5
+```
+
+# 🚦 29. **clamp()**  
+**Popis:** Obmedzí hodnotu na daný interval.  
+**Použitie:**
+```julia
+println(clamp(5, 1, 10))  # 5
+println(clamp(15, 1, 10)) # 10
+```
+
+## 🫤 30. **cumsum()**  
+**Popis:** Vráti kumulatívny súčet hodnôt.  
+**Použitie:**
+```julia
+pole = [1, 2, 3, 4]
+println(cumsum(pole))  # [1, 3, 6, 10]
+```
+
+### 🛠️ 15. **repeat()**  
+**Popis:** Opakuje prvky reťazca alebo poľa.  
+**Použitie:**
+```julia
+println(repeat("ahoj", 3))  # "ahojahojahoj"
+println(repeat([1, 2], 2))  # [1, 2, 1, 2]
+
+
 🌟 Tento dokument poskytuje praktické príklady najdôležitejších funkcií v jazyku Julia. Pre viac informácií navštívte [Oficiálnu dokumentáciu Julia](https://docs.julialang.org/en/v1/) 📖.
