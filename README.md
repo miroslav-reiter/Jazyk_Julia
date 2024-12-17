@@ -29,7 +29,7 @@ Prvá verzia jazyka bola verejne predstavená vo februári 2012. Odvtedy si Juli
 1. **Otvorený zdrojový kód:** Julia je open-source a aktívne vyvíjaná komunitou, čo znamená, že je voľne dostupná na použitie a rozširovanie.
 
 
-## 🛠️ Inštalácia Julia a integrácia s Jupyter Notebook v Anaconde
+# 🛠️ Inštalácia Julia a integrácia s Jupyter Notebook v Anaconde
 
 ---
 
@@ -199,7 +199,7 @@ Tu je prehľad základných príkazov pre **Julia** v príkazovom riadku (termin
 ---
 
 
-## 🚀 Praktické príklady v jazyku Julia
+# 🚀 Praktické príklady v jazyku Julia
 
 ## 1️⃣ 🧮 Základné aritmetické operácie
 ```julia
