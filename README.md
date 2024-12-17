@@ -1,5 +1,5 @@
-# 😺 Online kurz Git a Github
-Materiály k online kurzu Git a GitHub
+# 👩 Online kurz Julia
+Materiály k online kurzu Julia
 
 
 ## Zoznam základných Bash príkazov s vysvetleniami
