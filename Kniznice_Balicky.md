@@ -4,7 +4,7 @@
 🛠 Základná funkcionalita jazyka Julia: matematické funkcie, dátové typy, vstup/výstup, spracovanie reťazcov.
 
 ## 2. **Core**  
-⚙️ Základné definície a kľúčové primitíva potrebné pre spustenie kódu.
+⚙️ Základné definície a kľúčové primitívy potrebné pre spustenie kódu.
 
 ## 3. **Math**  
 🔢 Matematické operácie:  
