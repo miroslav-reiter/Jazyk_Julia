@@ -1,4 +1,4 @@
-# 💡 Prehľad Najdôležitejších Zabudovaných Funkcií v Jazyku Julia
+# 💡 Prehľad Zabudovaných Funkcií v Jazyku Julia
 
 Tento prehľad poskytuje zoznam najdôležitejších zabudovaných funkcií v jazyku **Julia** spolu s ich použitím a praktickými príkladmi.
 
