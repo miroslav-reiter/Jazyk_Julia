@@ -258,7 +258,7 @@ println(parse(Int, "42"))     # 42
 println(parse(Float64, "3.5"))  # 3.5
 ```
 
-# 🚦 29. **clamp()**  
+## 🚦 29. **clamp()**  
 **Popis:** Obmedzí hodnotu na daný interval.  
 **Použitie:**
 ```julia
@@ -274,7 +274,7 @@ pole = [1, 2, 3, 4]
 println(cumsum(pole))  # [1, 3, 6, 10]
 ```
 
-### 🛠️ 15. **repeat()**  
+## 🛠️ 31. **repeat()**  
 **Popis:** Opakuje prvky reťazca alebo poľa.  
 **Použitie:**
 ```julia
